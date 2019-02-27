@@ -5,7 +5,7 @@ float b , a , resp , r , resr ;
 char tipo, repe;
 do{
 
-printf("introduce 'c' para area de un circulo y 'p' si es un paralelogrmo \n");
+printf("introduce 'c' para area de un circulo y 'p' si es un rectangulo\n");
 scanf("%s",&tipo);
 if (tipo == 'p'){
 	printf("Dame las dimensiones del rectangulo\n");
