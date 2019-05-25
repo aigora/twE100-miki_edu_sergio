@@ -28,14 +28,14 @@ char eco[MAXCAD];
 
 } propietario;
 
-int main()
+int leer_archivo()
 {
 	
 char nombre_completo[100];
 char nombre_matricula[15];
 char nombre_dni[10];
 char nombre_eco[30];
-propietario lista[MAXCAD];
+char propietario_lista[MAXCAD];
 char nombre[100];
 char apellido[100] ;
 char matricula[20];
@@ -44,6 +44,8 @@ char eco[20];
 char L[30];
 char N[30];
 char ancho;
+char lista;
+int i;
 int nv = 0;
 int opcion, cont1;
 FILE *p_archivo;
@@ -87,10 +89,9 @@ cont1 = 1;
 		cont1++;
 	}
 
+int main;
 do
 {
-
-pf = fopen("madridcentral.txt", "r");
 	
 //fprintf( pf, " \n\tNombre    : %s ", L[i].nombre);
 //fprintf( pf," \n\tApellidos : %s ", L[i].apellido);
@@ -117,7 +118,7 @@ system("pause");
 break;
 
 case 4:
-mostrar_vehiculos_noaptos(&nv,lista);
+vmostrar_vehiculos_noaptos(&nv,lista);
 system("pause");
 break;
 
